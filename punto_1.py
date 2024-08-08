@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 X = np.array([0, 5, 10, 15, 24])
 Y = np.array([10, 18, 151, 219, 492])
 
-
+n = len(X)
 X_sum = np.sum(X)
 X2_sum = np.sum(X**2)
 X3_sum = np.sum(X**3)
@@ -14,7 +14,7 @@ XY_sum = np.sum(X * Y)
 X2Y_sum = np.sum(X**2 * Y)
 
 A = np.array([
-    [1, X_sum, X2_sum],
+    [n, X_sum, X2_sum],
     [X_sum, X2_sum, X3_sum],
     [X2_sum, X3_sum, X4_sum]
 ])
